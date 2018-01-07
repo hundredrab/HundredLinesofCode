@@ -1,3 +1,5 @@
+Relevant post: https://hundredlinesofcode.wordpress.com/2018/01/07/downloading-with-youtube-dl/
+
 This program downloads mp3 formats of multiple youtube videos by taking input from the file `songlist.txt`.
 
 Requirements:
