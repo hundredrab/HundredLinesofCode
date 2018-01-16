@@ -1,0 +1,14 @@
+<p>
+  My ToDo List!
+</p>
+  <ul><div *ngFor='let list of lists'
+  	[class.selected] = "list === selectedList"
+  	(click)="onSelect(hero)" ng-class="{strike: deleted}">
+ 	<span class=badge>{{ list.id }}</span> <input type=checkbox ng-model="deleted"> {{ list.name }}
+  </div></ul>
+
+<div *ngIf='selectedHero'>
+	<label>Edit:
+		<input [(ngModel)]="selectedHero.name" placeholder="name">
+	</label>
+</div>
